@@ -25,17 +25,36 @@ a {
 
 /*font-family: "Canela Thin", serif;*/
 .profilepic {
-border-style: solid;
-border-color: black;
+/*border-style: solid;
+border-color: white;*/
+height: 600px;
+width: 400;
+margin-top: 10%;
+float: right;
+position: relative;
 /*background-size: cover;*/
-display: block;   
 }
+.intro {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 100px;
+position: absolute;
+justify-content: center;
+margin: 0 auto;
+top: 35%;
+left:22%;
+background-color: transparent;
+z-index: 999;
+
+
+
+}
+
 .content {
 display:inline-block;
 }
-
 .pagestyle {
-    max-width: 55%;
+    max-width: 80%;
     margin: 10% 20%;
     font-size: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,4 +69,19 @@ display:inline-block;
 }
 .pagestyle p {
     line-height: 160%;
+}
+.projects img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    align-items: flex-start;
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    border-color: white;
+    
+}
+.card{
+    flex: 0 0 300px;
+
 }
