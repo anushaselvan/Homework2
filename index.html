@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
@@ -44,29 +43,41 @@
     <section id="work" class="pagestyle">
         <h2>Work</h2>
         <figure class="projects">
-            <div class="card">
-                <img src="img1.jpg" alt=""/>
-                <img src="img2.jpg" alt=""/>
-                <img src="img3.jpg" alt=""/>
-                <img src="img4.jpg" alt=""/>
-                <img src="img5.jpg" alt=""/>
-                <img src="img6.jpg" alt=""/>
+                <div class="card">
+                    <img src="img1.jpg" alt=""/>
+                
+                    <img src="img2.jpg" alt=""/>
+                
+                    <img src="img3.jpg" alt=""/>
+                
+                    <img src="img4.jpg" alt=""/>
+                
+                    <img src="img5.jpg" alt=""/>
+               
+                    <img src="img6.jpg" alt=""/>
              </div>
         </figure>
 
     </section>
+
     <section id="contact" class="pagestyle">
         <h2>Contact</h2>
-        <p>
-            Send me a msg
-            Textbox
-            Textbox 
-            button
-        </p>
+            <form action="https://formspree.io/f/xleaagkl"  method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="_replyto">
+                </label><br>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label><br>
+                
+                <button type="submit">Send</button>
+            </form>
     </section>
-</section>
+
     <footer>
-        <h4>Lets connect on socials</h4>
+        <h3>Lets connect on socials</h3>
         <nav>
             <ul>
                 <li>
@@ -74,9 +85,6 @@
                 </li>
                 <li>
                     <a href="github">Github</a>
-                </li>
-                <li>
-                    <a href="twitter">twitter</a>
                 </li>
             </ul>
         </nav>
