@@ -27,15 +27,12 @@ a {
     color: black;
 }
 
-/*font-family: "Canela Thin", serif;*/
 .profilepic {
-height: 600px;
-width: 400;
 margin-top: 10%;
 float: right;
 position: relative;
-
 }
+
 .intro {
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: bold;
@@ -76,6 +73,10 @@ display:inline-block;
     margin-left: 20%;
 
 }
+li h3{
+    font-size: 20px;
+    text-align: center;
+}
 
 .card img {
     display: inline-flex;
@@ -86,40 +87,41 @@ display:inline-block;
     height: 300px;
     border-style: solid;
     border-color: white; 
-    position:relative; 
 }
 
 .card li{
     list-style-type: none;
     display: inline-block;
 }
-/*
 
-@media screen and (max-width: 768px) {
-     .card{
-        display: block;
-    }       
-}
 @media screen and (max-width: 576px) {
-     .card{
-        width: 100%;
-    }      
-}*/
+    .profilepic{
+        transform: scale(0.60);
+    }
+    .intro{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .profilepic{
+        transform: scale(0.85);
+    }
+    .intro{
+        font-size: 85px;
+    }
+}
 
 
 .card img:hover {
-    
     box-shadow: 0 0 20px;
     border-color: black;
-    transform: scale(1.1);
-    
+   transform: scale(1.1);   
 }
-
-
 
 form {
     margin: 5% 20%;  
 }
+
 form button {
     
     color: black;
@@ -129,12 +131,14 @@ form button {
     margin: 4px 2px;
     cursor: pointer;
 }
+
 footer {
     font-size: large;
     justify-content: center;
     text-align: center;
     padding-bottom: 2%;
 }
+
 footer ul {
     margin: 3px;
     font-size: medium;
