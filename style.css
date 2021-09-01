@@ -13,6 +13,10 @@ header nav {
     display: flex;
     font-size: 22px;
 }
+header li:hover{
+ transform: scale(1.1);
+ font-weight: 300;
+}
 header li {
     list-style-type: none;
     display: inline-block;
@@ -25,14 +29,12 @@ a {
 
 /*font-family: "Canela Thin", serif;*/
 .profilepic {
-/*border-style: solid;
-border-color: white;*/
 height: 600px;
 width: 400;
 margin-top: 10%;
 float: right;
 position: relative;
-/*background-size: cover;*/
+
 }
 .intro {
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,13 +71,6 @@ display:inline-block;
     margin: 5% 20%;
 
 }
-.projects {
-    display: flex;
-}
-.card {
-    flex: 1;
-
-}
 
 .projects {
     margin-left: 20%;
@@ -86,16 +81,20 @@ display:inline-block;
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 5px;
     width: 300px;
     height: 300px;
     border-style: solid;
-    border-color: white;  
-}
-.card {
-    flex: 0 0 300px;
+    border-color: white; 
+    position:relative; 
 }
 
+.card li{
+    list-style-type: none;
+    display: inline-block;
+}
 /*
+
 @media screen and (max-width: 768px) {
      .card{
         display: block;
@@ -106,6 +105,17 @@ display:inline-block;
         width: 100%;
     }      
 }*/
+
+
+.card img:hover {
+    
+    box-shadow: 0 0 20px;
+    border-color: black;
+    transform: scale(1.1);
+    
+}
+
+
 
 form {
     margin: 5% 20%;  
