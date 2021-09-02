@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightgray;
 }
 
@@ -15,10 +14,10 @@ header nav {
     font-variant:small-caps;
     font-size: 22px;
 }
-
+/* Pseudo class is used to style the list element*/
 header li:hover{
- transform: scale(1.1);
- font-weight: 300;
+    transform: scale(1.1);
+    font-weight: 300;
 }
 
 header li {
@@ -33,27 +32,28 @@ a {
 }
 
 .profilepic {
-margin-top: 10%;
-float: right;
-position: relative;
+    margin-top: 10%;
+    float: right;
+    position: relative;
 }
 
 .intro {
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-weight: bold;
-font-size: 100px;
-position: absolute;
-justify-content: center;
-margin: 0 auto;
-top: 35%;
-left:22%;
-background-color: transparent;
-z-index: 999;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    justify-content: center;
+    margin: 0 auto;
+    top: 35%;
+    left:22%;
+    background-color: transparent;
+    z-index: 999;
 }
 
 .content {
-display:inline-block;
+    display:inline-block;
 }
+
 .pagestyle {
     max-width: 80%;
     font-size: 20px;
@@ -84,6 +84,7 @@ li h3{
     text-align: center;
 }
 
+/* Flex wrap is used here to wrap the images to the next line when the screen size is reduced*/
 .card img {
     display: inline-flex;
     flex-wrap: wrap;
@@ -99,7 +100,7 @@ li h3{
     list-style-type: none;
     display: inline-block;
 }
-
+/* media queries are used to resize the profile picture, to respond to different viewport*/
 @media screen and (max-width: 576px) {
     .profilepic{
         transform: scale(0.60);
@@ -117,7 +118,7 @@ li h3{
     }
 }
 
-
+/* Pseudo class is used to style the image element*/
 .card img:hover {
     box-shadow: 0 0 20px;
     border-color: black;
