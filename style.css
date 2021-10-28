@@ -15,7 +15,6 @@ header nav {
     font-size: 25px;
     font-weight: bold;
 }
-/* Pseudo class is used to style the list element*/
 header li:hover{
     transform: scale(1.1);
     font-weight: bolder;
@@ -100,7 +99,6 @@ li h3{
     margin: 10px 0;
 }
 
-/* Flex wrap is used here to wrap the images to the next line when the screen size is reduced*/
 .card img {
     display: flex;
     flex-wrap: wrap;
@@ -123,24 +121,57 @@ li h3{
     display: block;
 }
 /* media queries are used to resize the profile picture, to respond to different viewport*/
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 350px) and (max-width: 767px) {
+    *{
+        max-width: 100%;
+    }
+    .pagestyle p {
+        font-size: smaller;
+        max-width: 90%;
+        text-align: justify;
+    }
     .profilepic{
-        transform: scale(0.60);
+        transform: scale(0.6);
     }
     .intro{
         font-size: 60px;
     }
+    .card1{
+        width:100%;
+        height:110%;   
+     }
+    .card img{
+    transform: scale(0.7);
+    margin:1px;
+    }
+    .car p{
+        margin: 0;
+    }
+    
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    *{
+        max-width: 100%;
+    }
     .profilepic{
-        transform: scale(0.85);
+        transform: scale(0.7);
     }
     .intro{
         font-size: 85px;
     }
+    .card img{
+        transform:  scale(0.6);
+        margin: 2px;
+    }
+    .card p{
+        font-size: smaller;
+        max-width: 30%;
+        margin-top: 0;
+    }
+    
 }
 
-/* Pseudo class is used to style the image element*/
+
 .card img:hover {
     box-shadow: 0 0 20px;
    transform: scale(1.05);   
@@ -173,8 +204,8 @@ form button {
     display: flex;
     position: sticky;
     top: 0;
-   align-self: flex-start;
-   background-color: transparent;
+    align-self: flex-start;
+    background-color: transparent;
 
 
 }
