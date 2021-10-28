@@ -121,7 +121,8 @@ li h3{
     display: block;
 }
 /* media queries are used to resize the profile picture, to respond to different viewport*/
-@media screen and (min-width: 350px) and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
+
     *{
         max-width: 100%;
     }
@@ -147,9 +148,15 @@ li h3{
     .car p{
         margin: 0;
     }
+    .icons {
+        width:70%;
+        align-self: flex-start;
+    }
+    .icons ul{
+        margin: 2px 0 0 0;    }
     
 }
-@media screen and (min-width: 768px) and (max-width: 1366px){
+@media screen and (min-width: 769px) and (max-width: 1366px){
     *{
         max-width: 100%;
     }
@@ -158,6 +165,10 @@ li h3{
     }
     .intro{
         font-size: 85px;
+    }
+    .card1{
+        width:100%;
+        height: 110%;
     }
     .card img{
         transform:  scale(0.6);
