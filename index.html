@@ -17,7 +17,7 @@
                 <a href="#work">Work</a>
             </li>
             <li>
-                <a href="./images/Anusha_Resume.pdf">Resume</a>
+                <a href="./images/Anusha_Resume.pdf" target="blank">Resume</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -29,19 +29,23 @@
         <figure class="profilepic">
             <img src="./images/Profile1.jpg" height= 600px width=600px alt="My avatar"/>
         </figure>
-        <aside class="intro">Hello.<br> I am <br>Anusha</aside>
+        <aside class = "intro">
+           <span id = "intro1"> </span><br> 
+           <span id = "intro2"> </span><br>
+           <span id = "intro3"> </span>
+        </aside>
     </section>
-
+    
         <section class = "icons">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/anusha-s-89734421b/"><img src = './images/icons8-linkedin-48.png'/></a>
+                        <a href="https://www.linkedin.com/in/anusha-s-89734421b/" target="blank"><img src = './images/icons8-linkedin-48.png'/></a>
                     </li>
                     <li>
-                        <a href="https://github.com/anushaselvan"><img src = './images/icons8-github-48.png'></a>
+                        <a href="https://github.com/anushaselvan" target="blank"><img src = './images/icons8-github-48.png'></a>
                     </li>
                     <li>
-                        <a href="mailto:anushaselvan@gmail.com?"><img src = './images/icons8-mail-48.png'></a>
+                        <a href="mailto:anushaselvan@gmail.com?" target="blank"><img src = './images/icons8-mail-48.png'></a>
                     </li>
                     <li>
                         <a href = ""><img src = './images/icons8-home-48.png'></a>
@@ -64,37 +68,45 @@
 
                     <figure class="projects">
                         <div class="card">
-                            <ul>       
+                            <ul>  
+                                <li class = "card1">
+                                    <h3>Hawaiki Shop</h3>
+                                    <p>A full stack E-commerce application for users to purchase business merchandise with authentication and database connections.<br><br>
+                                        Nodejs, Express, Sequelize, Handlebars, Javascript, Jquery, mysql2, Izimodal</p>
+                                    <img src="./images/Hawaiki1.png" alt="HawaikiShop"/>
+                                    <h6><a href="https://hawaikishop.herokuapp.com/" target="blank">Application</a> || 
+                                    <a href="https://github.com/anushaselvan/E-commerce-Group-Project.git" target="blank">Repository </a></h6>
+                                </li>     
                                 <li class = "card1">  
                                     <h3>Coffee Mate!</h3>
                                     <p>The Coffee Morning App is designed for the user view during their morning coffee for their daily dose of internet goodness.<br><br>
                                         HTML, CSS, JavaScript, Moment.js, Third party APIs </p>
                                     <img src="./images/CoffeeMate.png" alt="Coffee app"/>
-                                    <h6><a href="https://anushaselvan.github.io/Coffee-mate">Application</a> || 
-                                    <a href="https://github.com/anushaselvan/Coffee-mate.git/">Repository </a></h6>
+                                    <h6><a href="https://anushaselvan.github.io/Coffee-mate" target="blank">Application</a> || 
+                                    <a href="https://github.com/anushaselvan/Coffee-mate.git/" target="blank">Repository </a></h6>
                                 </li>
                                 <li class = "card1">
                                     <h3>Weather Dashboard</h3>
                                     <p> A simple weather dashboard to display current weather of different cities including temperature, UV Index, wind speedand five day weather forecasts.<br><br>
                                         HTML, CSS, JQuery, Bootstrap, Moment.js, Open Weather - API </p>
                                     <img src="./images/Weather.PNG" alt="Weather"/>
-                                    <h6><a href="https://anushaselvan.github.io/WeatherDashboard-Server-sideAPI/">Application</a> || 
-                                    <a href="https://github.com/anushaselvan/WeatherDashboard-Server-sideAPI.git">Repository </a></h6>
+                                    <h6><a href="https://anushaselvan.github.io/WeatherDashboard-Server-sideAPI/" target="blank">Application</a> || 
+                                    <a href="https://github.com/anushaselvan/WeatherDashboard-Server-sideAPI.git" target="blank">Repository </a></h6>
                                 </li>
                                 <li class = "card1"> 
                                     <h3>Day Planner</h3>
                                     <p> The planner that allows the user to store tasks & agendas for a busy business day.<br><br>
                                      HTML, CSS, JQuery, Bootstrap, Moment.js</p>
                                     <img src="./images/Plan1.png" alt="Planner"/> 
-                                    <h6><a href="https://anushaselvan.github.io/DayPlanner-JQuery/">Application</a> || 
-                                    <a href="https://github.com/anushaselvan/DayPlanner-JQuery.git">Repository </a></h6>
+                                    <h6><a href="https://anushaselvan.github.io/DayPlanner-JQuery/" target="blank">Application</a> || 
+                                    <a href="https://github.com/anushaselvan/DayPlanner-JQuery.git" target="blank">Repository </a></h6>
                                 </li>
                                 <li class = "card1"> 
                                     <h3>README Generator</h3>
                                     <p>A Command-line Interface application to automatically generate a README file according to user responses to the prompts.<br><br>
                                     JavaScript, Node.js, Markdown</p>
                                     <img src="./images/README.PNG" alt="README"/>
-                                    <h6><a href="https://github.com/anushaselvan/README-Generator-Nodejs.git">Repository</a> </h6>
+                                    <h6><a href="https://github.com/anushaselvan/README-Generator-Nodejs.git" target="blank">Repository</a> </h6>
                                 </li>
                             
                             </ul>
@@ -113,7 +125,6 @@
                             Message
                             <textarea name="message"></textarea>
                         </label><br>
-                        
                         <button type="submit">Send</button>
                     </form>
             </section>
